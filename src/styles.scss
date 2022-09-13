@@ -1,1 +1,190 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$background-color: #DBCCE2;
+$primary-color: #404040;
+// $accent-secondary: #DF9595;
+
+$box-light: #E2D5E8;
+$box-shadow: #CDBCD6;
+
+$button-base : #F1AFAF;
+$button-light: #F1D7D7;
+$button-shadow: #C57373;
+
+$space-grotesk: 'Space Grotesk', sans-serif;
+$space-mono: 'Space Mono', monospace;
+
+$bold: 700;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $space-grotesk;
+    margin: 0;
+    font-size: 1.2rem;
+    color: $primary-color;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    list-style: none;
+    color: $primary-color;
+}
+
+.app-wrapper {
+    height: 100vh;
+    padding: 2rem;
+
+    .header-wrapper {
+        text-transform: uppercase;
+        font-weight: $bold;
+        letter-spacing: 1px;
+
+    }
+
+    .router-wrapper {
+        padding: 1rem;
+    }
+
+    .footer-wrapper {
+        font-size: 0.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: $bold;
+        letter-spacing: 1px;
+    }
+}
+
+.flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.flex-col-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature {
+    grid-area: a;
+    border-radius: 60px;
+    width: 500px;
+    height: 500px;
+    padding: 2rem;
+    box-shadow:
+        -7px -7px 20px $box-light,
+        7px 7px 20px $box-shadow ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.regular {
+    border-radius: 50px;
+    padding: 1.5rem;
+    width: 230px;
+    height: 230px;
+    box-shadow:
+        -7px -7px 20px $box-light,
+        7px 7px 20px $box-shadow ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    .one {
+        grid-area: b1;
+    }
+
+    .two {
+        grid-area: b2;
+    }
+
+    .three {
+        grid-area: b3;
+    }
+
+    .four {
+        grid-area: b4;
+    }
+
+    .five {
+        grid-area: b5;
+    }
+
+    .six {
+        grid-area: b6;
+    }
+}
+
+.read-button-small {
+    background-color: $button-base;
+    height: 55px;
+    padding: 6px 6px;
+    border-radius: 35px;
+    box-shadow:
+        -7px -7px 20px $button-light,
+        7px 7px 20px $button-shadow ;
+
+    svg {
+        padding: 4px;
+    }
+}
+
+.read-button-large {
+    background-color: $button-base;
+    height: 70px;
+    padding: 13px 13px;
+    border-radius: 35px;
+    box-shadow:
+        -7px -7px 20px $button-light,
+        7px 7px 20px $button-shadow ;
+}
+
+.tiny-details {
+    display: block;
+    color: $box-shadow;
+    font-style: italic;
+    font-weight: $bold;
+    font-size: 1rem;
+    text-shadow: 0 -1px 0px rgba($color: #404040, $alpha: 0.4);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "a b1 b2 b3"
+        "a b4 b5 b6"
+    ;
+    gap: 40px 40px;
+    justify-content: center;
+}
+
+.h-head {
+    font-size: 2rem;
+    font-family: $space-mono;
+    font-weight: $bold;
+}
+
+.h-desc {
+    font-size: 1.5rem;
+    font-family: $space-grotesk;
+}
+
+.p-head {
+    font-size: 1.5rem;
+    font-family: $space-mono;
+    font-weight: $bold;
+}
