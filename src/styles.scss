@@ -135,9 +135,10 @@ a {
         -7px -7px 20px $button-light,
         7px 7px 20px $button-shadow ;
     transition: box-shadow 0.3s ease;
+    border-style: none;
 
     svg {
-        margin: 10px;
+        margin: 7px 6px;
         position: relative;
         top: 3px;
         padding: 2px;
@@ -147,14 +148,15 @@ a {
 .read-button-large {
     background-color: $button-base;
     height: fit-content;
-    border-radius: 35px;
+    border-radius: 50px;
     box-shadow:
         -7px -7px 20px $button-light,
         7px 7px 20px $button-shadow ;
     transition: box-shadow 0.3s ease;
+    border-style: none;
 
     svg {
-        margin: 17px;
+        margin: 16px 15px;
         position: relative;
         top: 3px;
     }
@@ -163,6 +165,14 @@ a {
 .read-button-large:hover,
 .read-button-small:hover {
     cursor: pointer;
+}
+
+.read-button-large:focus-visible,
+.read-button-small:focus-visible {
+    outline: none;
+    box-shadow:
+        -3px -3px 13px $button-light,
+        3px 3px 13px $button-shadow ;
 }
 
 .read-button-large:active,
