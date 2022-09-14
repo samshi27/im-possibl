@@ -129,35 +129,56 @@ a {
 
 .read-button-small {
     background-color: $button-base;
-    height: 55px;
-    padding: 6px 6px;
-    border-radius: 35px;
+    height: fit-content;
+    border-radius: 40px;
     box-shadow:
         -7px -7px 20px $button-light,
         7px 7px 20px $button-shadow ;
+    transition: box-shadow 0.3s ease;
 
     svg {
-        padding: 4px;
+        margin: 10px;
+        position: relative;
+        top: 3px;
+        padding: 2px;
     }
 }
 
 .read-button-large {
     background-color: $button-base;
-    height: 70px;
-    padding: 13px 13px;
+    height: fit-content;
     border-radius: 35px;
     box-shadow:
         -7px -7px 20px $button-light,
         7px 7px 20px $button-shadow ;
+    transition: box-shadow 0.3s ease;
+
+    svg {
+        margin: 17px;
+        position: relative;
+        top: 3px;
+        // filter: drop-shadow(-1px -1px 0px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.read-button-large:hover,
+.read-button-small:hover {
+    cursor: pointer;
+}
+
+.read-button-large:active,
+.read-button-small:active {
+    box-shadow:
+        -3px -3px 13px $button-light,
+        3px 3px 13px $button-shadow ;
 }
 
 .tiny-details {
     display: block;
-    color: $box-shadow;
+    color: rgba($color: #BCA9C7, $alpha: 1);
     font-style: italic;
     font-weight: $bold;
     font-size: 1rem;
-    text-shadow: 0 -1px 0px rgba($color: #404040, $alpha: 0.4);
 }
 
 .grid {
