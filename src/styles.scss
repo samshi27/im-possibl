@@ -218,3 +218,76 @@ a {
     font-family: $space-mono;
     font-weight: $bold;
 }
+
+@media (max-width: 600px) {
+    .router-wrapper {
+        margin: 3rem 0;
+    }
+
+    .h-head,
+    .h-desc {
+        font-size: 1.6rem;
+    }
+
+    .p-head,
+    .p-desc {
+        font-size: 1.2rem;
+    }
+
+    .p-desc {
+        display: none;
+    }
+
+    .grid {
+        grid-template-areas:
+            "a a"
+            "b1 b2"
+            "b3 b4"
+            "b5 b6"
+        ;
+        gap: 30px 30px;
+        justify-content: center;
+    }
+
+    .feature {
+        width: 350px;
+        height: 350px;
+        padding: 1.5rem;
+    }
+
+    .regular {
+        padding: 1.2rem;
+        width: 160px;
+        height: 160px;
+
+        .tiny-details {
+            font-size: 0.8rem;
+        }
+    }
+
+    .read-button-small {
+
+        svg {
+            margin: 5px 3px;
+            position: relative;
+            top: 3px;
+            padding: 3px;
+        }
+    }
+
+    .read-button-large {
+
+        svg {
+            margin: 10px 8px;
+            position: relative;
+            top: 3px;
+            padding: 2px;
+        }
+    }
+}
+
+// @media (min-width: 900px) {
+//     .cards {
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+// }
