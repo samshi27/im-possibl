@@ -26,6 +26,7 @@ body {
     margin: 0;
     font-size: 1.2rem;
     color: $primary-color;
+    line-height: 1.5;
 }
 
 p {
@@ -224,9 +225,12 @@ a {
         margin: 3rem 0;
     }
 
-    .h-head,
+    .h-head {
+        font-size: 1.5rem;
+    }
+
     .h-desc {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .p-head,
@@ -250,12 +254,14 @@ a {
     }
 
     .feature {
+        border-radius: 50px;
         width: 350px;
         height: 350px;
         padding: 1.5rem;
     }
 
     .regular {
+        border-radius: 40px;
         padding: 1.2rem;
         width: 160px;
         height: 160px;
@@ -268,7 +274,7 @@ a {
     .read-button-small {
 
         svg {
-            margin: 5px 3px;
+            margin: 5px 2px;
             position: relative;
             top: 3px;
             padding: 3px;
@@ -278,7 +284,7 @@ a {
     .read-button-large {
 
         svg {
-            margin: 10px 8px;
+            margin: 10px 7px;
             position: relative;
             top: 3px;
             padding: 2px;
