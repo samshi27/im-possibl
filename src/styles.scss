@@ -171,15 +171,15 @@ a {
 .read-button-small:focus-visible {
     outline: none;
     box-shadow:
-        -3px -3px 13px $button-light,
-        3px 3px 13px $button-shadow ;
+        -3px -3px 10px $button-light,
+        3px 3px 10px $button-shadow ;
 }
 
 .read-button-large:active,
 .read-button-small:active {
     box-shadow:
-        -3px -3px 13px $button-light,
-        3px 3px 13px $button-shadow ;
+        -3px -3px 10px $button-light,
+        3px 3px 10px $button-shadow ;
 }
 
 .tiny-details {
